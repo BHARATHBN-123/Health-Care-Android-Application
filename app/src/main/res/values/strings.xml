@@ -2,4 +2,8 @@
     <string name="app_name">Health Care App</string>
     <string name="password">Password</string>
     <string name="user_name">User Name</string>
+    <string name="re_enter_username">Re-enter UserName</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="signup">Signup</string>
+    <string name="already_have_an_account_click_here_to_sign_in">Already Have an account click here to sign in?</string>
 </resources>
