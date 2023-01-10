@@ -4,10 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
-    tools:context=".LoginActivity">
-    <!--    android:background="@drawable/back1">-->
-
+    tools:context=".RegisterActivity">
     <EditText
         android:id="@+id/editTextpassword"
         android:layout_width="318dp"
@@ -48,7 +45,7 @@
         android:layout_width="123dp"
         android:layout_height="47dp"
         android:layout_marginTop="68dp"
-        android:text="Login"
+        android:text="Signup"
         android:textColor="#101010"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,4 +101,5 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginbtn" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
