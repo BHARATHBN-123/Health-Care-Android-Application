@@ -33,6 +33,7 @@ public class RegisterActivity extends AppCompatActivity {
                 String  Email = email.getText().toString();
                 String Password = edPassword.getText().toString();
                 String ConfirmPassword = edConfirmPassword.getText().toString();
+                Database db = new Database(getApplicationContext(), "BeaconInfo" , null ,1 );
                 if(Username.length()==0 || Email.length()==0 || Password.length()==0 || ConfirmPassword.length()==0 ){
                     Toast.makeText(getApplicationContext(), "Fill all the credentials", Toast.LENGTH_LONG).show();
                 } else if(!Password.equals(ConfirmPassword)){
@@ -42,8 +43,8 @@ public class RegisterActivity extends AppCompatActivity {
 
                 }
                 else{
-
-                    Toast.makeText(getApplicationContext(), "signup successful", Toast.LENGTH_LONG).show();
+                    db.register(Username,Password,Email);
+                    Toast.makeText(getApplicationContext(), "Record Inserted", Toast.LENGTH_LONG).show();
                     startActivity(new Intent(RegisterActivity.this , LoginActivity.class));
                 }
 
